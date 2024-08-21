@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      
+    }
+    body{
+      background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),       url('img/landing page.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 900px;
+
+    }
+    header{
+      width: 100;
+      background-color: rgb(96, 98, 98,0.6);
+    
+    }
+    nav{
+      width: 100%;
+      height: 100px;
+      color:white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .travel{
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+    .menu a{
+      text-decoration: none;
+      color: aliceblue;
+      padding: 10px 20px;
+      font-size: 20px;
+      position: relative;
+    }
+    .menu a:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      border-bottom: 2px solid indianred;
+      transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+      width: 90%;
+
+    }
+    .register a{
+      text-decoration: none;
+       color: aliceblue;
+       padding: 10px 20px;
+       font-size: 20px;  
+       background-color: rgb(231, 107, 53);
+       border-radius: 1rem;
+       align-items: center;
+       transition: 0.4s;
+    }
+    .register a:hover{
+      background: transparent;
+      border: 1px solid indianred;
+    }
+    section{
+      color: aliceblue;
+      margin-top: 130px;
+      margin-left: 120px;
+      margin-right: 600px;
+      align-items: center;
+      font-size: 36px;
+      background-color: rgb(96, 98, 98,0.6);
+      border-radius: 1rem;
+      padding: 20px;
+
+    }
+    section a{
+      text-decoration: none;
+      color:white;
+      background-color: rgb(231, 107, 53);
+      font-size: 30px;
+      border-radius: 0.5rem;
+      padding: 10px 20px;
+      transition: 0.4s;
+    }
+    section a:hover {
+      background: transparent;
+      border: 1px solid indianred;
+    }
+    span{
+      text-align: center;
+      letter-spacing: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="travel">Travel-A</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Hill staions</a>
+        <a href="#">Best offer</a>
+        <a href="#">Our sites</a>
+        <a href="#">Contacts</a>
+ </div>
+ <div class="register">
+  <a href="#">Register</a>
+ </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <span>Enjoy</span>
+      <h1>International Travel Agency</h1>
+      <br>
+      <a href="#">Book Your Trip</a>
+    </section>
+  </main>
+</body>
+</html>
